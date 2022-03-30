@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingDojo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="rowtop">
+    <div class="top">
+        <!-- Navigation -->
+            <div class="nav">
+            <h1>Gaming<span>Dojo</span></h1>
+            <ul class="nav-links">
+                <li><select name="currency" id="currency"><option value="Euro">Euro €</option></select></li>
+                <li><a href="#"><img src="images/cart-light.png" id="cart" alt="cart"></a></li>
+                <li><a href="#" class="shopping"><span id="cart2">0</span></a></li>
+                <li><a href="#"><img src="images/search-light.png" id="search" alt="search"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <p class="highlights">Highlights</p>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="heroimage">
+                <img src="images/chevron-left.png" onclick="changeImage2()" alt="chevron-left" id="chevron-left">
+                <img src="images/stonepunk.png" alt="stonepunk" id="stonepunk">
+                <!-- I had to create this image: it was not included in the image files :) -->
+                <img src="images/chevron-right.png" onclick="changeImage()" alt="chevron-right" id="chevron-right">
+            </div>
+        </div>
+        <div class="row">
+            <!-- Boxes -->
+            <div class="gamebox">
+                <img src="images/cafe-neko.png" alt="neko" class="neko">
+                <p>Cafe Neko: Gold Edition</p>
+                <img src="images/windows.png" alt="windows" class="icon-s"><img src="images/apple.png" alt="apple" class="icon-s">
+                <div class="gamebox-btns">
+                    <button class="purple">-20%</button>
+                    <p class="strike1">€14.98</p>
+                    <p>€10.49</p>
+                    <button  onclick="addcart()" class="green">Buy</button>
+                </div>
+            </div>
+            <div class="gamebox">
+                <img src="images/pixel-ninjas-2.png" alt="pixel-ninjas-2" class="pninjas">
+                <p>Pixel Ninjas 2</p>
+                <img src="images/windows.png" alt="windows" class="icon-s"><img src="images/apple.png" alt="apple" class="icon-s">
+                <div class="gamebox-btns">
+                    <button class="purple">-10%</button>
+                    <p class="strike2">€8.19</p>
+                    <p>€7.39</p>
+                    <button onclick="addcart()" class="green">Buy</button>
+                </div>
+            </div>
+            <div class="gamebox">
+                <img src="images/stonepunk.png" alt="stonepunk" class="stonepunk">
+                <p>Stonepunk 10000 BCE</p>
+                <img src="images/windows.png" alt="windows" class="icon-s"><img src="images/apple.png" alt="apple" class="icon-s"><img src="images/linux.png" alt="linux" class="icon-s" onclick="message(this)">
+                <div class="gamebox-btns">
+                    <button class="purple">NEW</button>
+                    <p>€19.99</p>
+                    <button onclick="addcart()" class="green">Buy</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+    </body>
+    </html>
