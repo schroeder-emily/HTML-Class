@@ -1,0 +1,48 @@
+.row {
+    display: flex;
+}
+
+.col, .col-2, .col-3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+/*.row {
+    display: flex;
+}
+
+.col {
+    background-color: teal;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.col-2 {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 3;
+}
+
+.col-3 {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 5;
+}
+I got the same result with the above code/*
